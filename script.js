@@ -2,7 +2,7 @@
 // SETTINGS & FACULTY LIST
 // ==========================================
 const ADMIN_PIN = "AWALI143"; 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyk9ukESOeVNUVGZxQrEtpt4NsGBJWNU7XGqVCKtd_DXwmqXWZh3Y6BKejCLwE5XPnxXg/exec"; 
+const WEB_APP_URL = "https://docs.google.com/spreadsheets/d/1esHrBX3zexDDtwwHs9VO2ZkRwxa8kamlePoo9Y3jWa8/edit?gid=0#gid=0"; 
 
 const FACULTY_LIST = [
   "ALFEREZ, JOHNDREB O.",
