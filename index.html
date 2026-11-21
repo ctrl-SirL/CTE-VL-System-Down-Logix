@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTE Visiting Lecturer Alternative Logix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="header-brand">
+      
+      <img src="CTE logo.png" alt="ZPPSU CTE Logo" class="header-logo" onerror="this.style.display='none'" />
+      <div>
+        <h1>CTE Visiting Lecturer Alternative Logix</h1>
+        <div style="font-size: 0.85rem; color: #64748b; margin-top: 4px;">
+          AM/PM DTR &bull; Used and utilized only if the ZPPSU System Logix is Down &bull; Sir L
+        </div>
+      </div>
+    </div>
+    <div class="clock-box">
+      <div id="live-clock">00:00:00</div>
+      <div id="live-date">Loading date...</div>
+    </div>
+  </header>
+
+  <div class="control-panel">
+    <div class="input-row single-col">
+      <div>
+        <label for="faculty-select">1. Select Faculty Name</label>
+        <select id="faculty-select">
+          <option value="">-- Choose Your Name --</option>
+        </select>
+      </div>
+    </div>
+
+    <label>2. Click Your Attendance Action</label>
+    <div class="button-grid">
+      <button class="btn-am-in" onclick="logAttendance('amIn')">AM Time IN</button>
+      <button class="btn-am-out" onclick="logAttendance('amOut')">AM Time OUT</button>
+      <button class="btn-pm-in" onclick="logAttendance('pmIn')">PM Time IN</button>
+      <button class="btn-pm-out" onclick="logAttendance('pmOut')">PM Time OUT</button>
+    </div>
+  </div>
+
+  <!-- Privacy Banner -->
+  <div class="privacy-banner" id="privacy-banner">
+    <div>
+      <strong>Entries are securely synced to cloud database.</strong>
+      <div style="font-size: 0.85rem; margin-top: 2px;">Your timestamp is recorded securely upon clicking a button above.</div>
+    </div>
+    <button class="btn-admin" onclick="unlockAdmin()">Admin View & Export</button>
+  </div>
+
+  <!-- Hidden Admin Table -->
+  <div id="admin-section">
+    <div class="toolbar">
+      <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+        
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <a id="https://docs.google.com/spreadsheets/d/19RNEluYCVL3onzqPzfe_bJAQxB1pe2LMwMyNdEYtRgc/edit?usp=sharing" href="https://docs.google.com/spreadsheets/d/19RNEluYCVL3onzqPzfe_bJAQxB1pe2LMwMyNdEYtRgc/edit?usp=sharing" target="_blank" class="btn-sheet" style="text-decoration:none; padding: 10px 16px; background: #059669; color: white; border-radius: 6px; font-weight:700; font-size:0.88rem; ">Open Master Google Sheet</a>
+      </div>
+    </div>
+
+    
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
